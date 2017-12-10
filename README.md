@@ -2,6 +2,8 @@
 
 Welcome to the CMPE226-team 5 project!
 
+Testing address: http://159.89.130.227/
+
 ## Resources used
 
 [Flask official document](http://flask.pocoo.org/docs/0.12/)
@@ -61,3 +63,32 @@ To import DDL, go to /SQL, run
 mysql < team5_final.sql -u yourusername -p
 ```
 
+## A more complex running example by using docker
+
+Actually the test address is deployed in this way.
+
+Run a MySQL container and import the DDL.sql.
+
+Run another python container to run the server.py.
+
+So actually our database server and web server are separated.
+This can lead to higher security level and extensibility of the whole app.
+
+For reference of usage:
+
+https://hub.docker.com/_/mysql/
+
+https://hub.docker.com/_/python/
+
+
+Docker container status at 159.89.130.227
+
+```
+# In the server run
+docker ps
+
+# Get output as follow
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES
+8be62e7ecd5f        myimage             "python3"                About an hour ago   Up 8 minutes        0.0.0.0:80->5000/tcp   myapp
+66edaa49762e        mysql               "docker-entrypoint..."   About an hour ago   Up About an hour    3306/tcp               realmysql
+```
