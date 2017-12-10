@@ -13,7 +13,7 @@ mysql = MySQL()
 app = Flask(__name__)
 app.secret_key = 'any random string'
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = '880112'
+app.config['MYSQL_DATABASE_PASSWORD'] = '111222'
 # app.config['MYSQL_DATABASE_USER'] = 'ys'
 # app.config['MYSQL_DATABASE_PASSWORD'] = 'ysys'
 app.config['MYSQL_DATABASE_DB'] = 'teamfive'
@@ -884,6 +884,5 @@ if __name__ == '__main__':
     app.debug = True
     import logging
     logging.basicConfig(filename='logfile.log',level=logging.DEBUG)
-    app.run()
-    logging.basicConfig(filename='logfile.log',level=logging.DEBUG)
-    # app.run(host='0.0.0.0',port=5000)
+    # app.run()
+    app.run(host='0.0.0.0',port=5000)
