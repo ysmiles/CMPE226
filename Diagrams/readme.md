@@ -119,7 +119,7 @@ All relations have already been 3NF.
 
 ### 1. Original
 
-![schema](/ERD/schemadiagram.svg)
+![schema](/Diagrams/schemadiagram.svg)
 
 ### 2. 3NF
 

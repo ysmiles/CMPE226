@@ -18,6 +18,9 @@ please refer to this
 This is one of the annoying problems among python versions.
 In my experience, many popular libraries, such as TensorFlow and gRPC, use `virtualenv`. But for standard library usage, here we use `venv`.)
 
+## Schema
+![schema-3NF](Diagrams/schema-3NF.svg)
+
 ## Run locally
 
 Assume at local machine you already have a recent python 3 version (3.5 or 3.6) and pip.
