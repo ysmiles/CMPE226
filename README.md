@@ -2,8 +2,6 @@
 
 Welcome to the CMPE226-team 5 project!
 
-Testing address: http://159.89.130.227/
-
 ## Resources used
 
 [Flask official document](http://flask.pocoo.org/docs/0.12/)
